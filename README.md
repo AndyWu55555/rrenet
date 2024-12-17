@@ -5,8 +5,8 @@ The AAAI2025 accepted this paper! We will release the code in the next few days.
 ### Experiments on the CIFAR-100 / 10 dataset
 |Model Name|Group $G$|Equivariance|CIFAR-100 Acc.|#Param.|CIFAR-10 Acc.|#Param.|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|c2_sre_n|$C_2$|SRE|76.95|325748|-|-|
-|c2_rre_n|$C_2$|RRE|77.84|345140|-|-|
+|c2_sre_n|$C_2$|SRE|76.95|325748|-|314138|
+|c2_rre_n|$C_2$|RRE|77.84|345140|-|333530|
 |c4_sre_n|$C_4$|SRE|80.79|625012|-|-|
 |c4_rre_n|$C_4$|RRE|82.48|663796|-|-|
 |c6_sre_n|$C_6$|SRE|81.36|924276|-|-|
