@@ -1,7 +1,7 @@
 # Relaxed Rotational Equivariance via $G$-Biases in Vision
 The AAAI2025 accepted this paper! We will release the code in the next few days.
-### Ablation Experiments on the CIFAR-100 dataset
-Unlike the ablation experiment reported in the paper, we simplified the classification header and re-conducted the ablation experiment, resulting in more prominent results. The results are as follows:
+### Experiments on the CIFAR-100 dataset
+Unlike the experiment reported in the paper, we simplified the classification header and re-conducted the ablation experiment, resulting in more prominent results. The results are as follows:
 |Model Name|Group G|Type of Equivariance|Top-1 Acc.|#Param.|
 |-|-|-|-|-|
 |c2_sre_n|$C_2$|SRE|76.95|325748|
@@ -18,6 +18,25 @@ Unlike the ablation experiment reported in the paper, we simplified the classifi
 |c4_rre_n|$C_4$|82.48|663796|
 |c4_rre_s|$C_4$|84.47|2524548|
 |c4_rre_m|$C_4$|85.35|8061316|
+
+### Experiments on the CIFAR-10 dataset
+|Model Name|Group G|Type of Equivariance|Top-1 Acc.|#Param.|
+|-|-|-|-|-|
+|c2_sre_n|$C_2$|SRE||-|
+|c2_rre_n|$C_2$|RRE|-|333530|
+|c4_sre_n|$C_4$|SRE|-|-|
+|c4_rre_n|$C_4$|RRE|-|-|
+|c6_sre_n|$C_6$|SRE|-|-|
+|c6_rre_n|$C_6$|RRE|-|-|
+|c8_sre_n|$C_8$|SRE|-|-|
+|c8_rre_n|$C_8$|RRE|-|-|
+
+|Model Name|Group G|Top-1 Acc.|#Param.|
+|-|-|-|-|
+|c4_rre_n|$C_4$|-|-|
+|c4_rre_s|$C_4$|-|-|
+|c4_rre_m|$C_4$|-|-|
+
 
 
 You can train the model using the following command:
