@@ -1,7 +1,8 @@
 # Relaxed Rotational Equivariance via $G$-Biases in Vision
 The AAAI2025 accepted this paper! We will release the code in the next few days.
+### Note
+Unlike the experiments reported in the paper, we simplified the classification header and re-conducted the experiments, resulting in more prominent results with fewer parameters. The new results are as follows:
 ### Experiments on the CIFAR-100 dataset
-Unlike the experiment reported in the paper, we simplified the classification header and re-conducted the ablation experiment, resulting in more prominent results. The results are as follows:
 |Model Name|Group G|Type of Equivariance|Top-1 Acc.|#Param.|
 |-|-|-|-|-|
 |c2_sre_n|$C_2$|SRE|76.95|325748|
