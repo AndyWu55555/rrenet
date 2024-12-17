@@ -3,7 +3,7 @@ The AAAI2025 accepted this paper! We will release the code in the next few days.
 ### Note
 Unlike the experiments reported in the paper, we simplified the classification header and re-conducted the experiments, resulting in more prominent results with fewer parameters. The new results are as follows:
 ### Experiments on the CIFAR-100 dataset
-|Model Name|Group G|Type of Equivariance|Top-1 Acc.|#Param.|
+|Model Name|Group G|Equivariance|Top-1 Acc.|#Param.|
 |-|-|-|-|-|
 |c2_sre_n|$C_2$|SRE|76.95|325748|
 |c2_rre_n|$C_2$|RRE|77.84|345140|
@@ -21,7 +21,7 @@ Unlike the experiments reported in the paper, we simplified the classification h
 |c4_rre_m|$C_4$|85.35|8061316|
 
 ### Experiments on the CIFAR-10 dataset
-|Model Name|Group G|Type of Equivariance|Top-1 Acc.|#Param.|
+|Model Name|Group G|Equivariance|Top-1 Acc.|#Param.|
 |-|-|-|-|-|
 |c2_sre_n|$C_2$|SRE||-|
 |c2_rre_n|$C_2$|RRE|-|333530|
