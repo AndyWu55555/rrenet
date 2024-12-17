@@ -1,4 +1,4 @@
-# Relaxed Rotational Equivariance via G-Biases in Vision
+# Relaxed Rotational Equivariance via $G$-Biases in Vision
 The AAAI2025 accepted this paper! We will release the code in the next few days.
 ### Ablation Experiments on the CIFAR-100 dataset
 Unlike the ablation experiment reported in the paper, we simplified the classification header and re-conducted the ablation experiment, resulting in more prominent results. The results are as follows:
@@ -15,13 +15,13 @@ Unlike the ablation experiment reported in the paper, we simplified the classifi
 
 You can train the model using the following command:
 
-'''
-python classification/train.py -model [Model Name] -dataset [Dataset] -batch_size 128
-'''
+```
+python classification/train.py -model **[Model Name]** -dataset **[Dataset]** -batch_size 128
+```
 
-[Model Name]: c2_sre_n, c2_rre_n, c4_sre_n, c4_rre_n, c6_sre_n, c8_sre_n, c8_rre_n
+**[Model Name]**: c2_sre_n, c2_rre_n, c4_sre_n, c4_rre_n, c6_sre_n, c8_sre_n, c8_rre_n
 
-[Dataset]: cifar10, cifar100
+**[Dataset]**: cifar10, cifar100
 
 Example command: 
 
