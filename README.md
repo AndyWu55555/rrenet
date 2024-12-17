@@ -13,13 +13,20 @@ Unlike the ablation experiment reported in the paper, we simplified the classifi
 |c8_sre_n|$C_8$|SRE|82.52|1223540|
 |c8_rre_n|$C_8$|RRE|83.63|1301108|
 
+|Model Name|Group G|Top-1 Acc.|#Param.|
+|-|-|-|-|
+|c4_rre_n|$C_4$|82.48|663796|
+|c4_rre_s|$C_4$|84.47|2524548|
+|c4_rre_m|$C_4$|85.35|8061316|
+
+
 You can train the model using the following command:
 
 ```
 python classification/train.py -model [Model Name] -dataset [Dataset] -batch_size 128
 ```
 
-**[Model Name]**: c2_sre_n, c2_rre_n, c4_sre_n, c4_rre_n, c6_sre_n, c6_rre_n, c8_sre_n, c8_rre_n
+**[Model Name]**: c2_sre_n, c2_rre_n, c4_sre_n, c4_rre_n, c4_rre_s, c4_rre_m, c6_sre_n, c6_rre_n, c8_sre_n, c8_rre_n
 
 **[Dataset]**: cifar10, cifar100
 
