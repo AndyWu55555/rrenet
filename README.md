@@ -33,6 +33,7 @@ python classification/train.py -model [Model Name] -dataset [Dataset] -batch_siz
 Example command: 
 
 ```
-python classification/train.py -model c4_rre_n -dataset cifar100 -batch_size 128
+cd classification
+python train.py -model c4_rre_n -dataset cifar100 -batch_size 128
 ```
 
