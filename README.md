@@ -16,7 +16,7 @@ Unlike the ablation experiment reported in the paper, we simplified the classifi
 You can train the model using the following command:
 
 ```
-python classification/train.py -model **[Model Name]** -dataset **[Dataset]** -batch_size 128
+python classification/train.py -model [Model Name] -dataset [Dataset] -batch_size 128
 ```
 
 **[Model Name]**: c2_sre_n, c2_rre_n, c4_sre_n, c4_rre_n, c6_sre_n, c8_sre_n, c8_rre_n
@@ -25,7 +25,7 @@ python classification/train.py -model **[Model Name]** -dataset **[Dataset]** -b
 
 Example command: 
 
-"""
+```
 python classification/train.py -model c4_rre_n -dataset cifar100 -batch_size 128
-"""
+```
 
