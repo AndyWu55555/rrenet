@@ -16,7 +16,7 @@ The AAAI2025 accepted this paper! We will release the code in the next few days.
 
 |Model Name|Group $G$|CIFAR-100 Acc.|#Param.|CIFAR-10 Acc.|#Param.|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|c4_rre_n|$C_4$|82.48|663796|-|-|
+|c4_rre_n|$C_4$|82.48|663796|96.62|652186|
 |c4_rre_s|$C_4$|84.47|2524548|-|-|
 |c4_rre_m|$C_4$|85.35|8061316|-|-|
 
