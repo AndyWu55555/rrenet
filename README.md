@@ -17,7 +17,7 @@ warmup stage: LinearLR; main_stage: CosineAnnealingLR
 |c6_sre_n|$C_6$|SRE|81.36|924276|96.07|912666|
 |c6_rre_n|$C_6$|RRE|83.20|982452|96.86|970842|
 |c8_sre_n|$C_8$|SRE|82.52|1223540|-|-|
-|c8_rre_n|$C_8$|RRE|83.63|1301108|-|-|
+|c8_rre_n|$C_8$|RRE|83.63|1301108|-|1289498|
 
 |Model Name|Group $G$|CIFAR-100 Acc.|#Param.|CIFAR-10 Acc.|#Param.|
 |:---:|:---:|:---:|:---:|:---:|:---:|
