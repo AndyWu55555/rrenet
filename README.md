@@ -3,7 +3,7 @@ The AAAI2025 accepted this paper! We will release the code in the next few days.
 
 ### Training settings
 batch_size=128; epochs=300; warmup_epochs=20; lr=0.1; lr_min=1e-6; momentum=0.9; weight_decay=5e-4
-augmentation=cutmix_or_mixup;optimizer=SGD; criterion=CrossEntropyLoss;
+augmentation=cutmix_or_mixup (torchvision.transforms.v2); optimizer=SGD; criterion=CrossEntropyLoss;
 warmup stage: LinearLR; main_stage: CosineAnnealingLR
 
 **Note:** Unlike the experiments reported in the paper, we simplified the classification header and re-conducted the experiments, resulting in more prominent results with fewer parameters. The new results are as follows:
