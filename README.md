@@ -10,7 +10,7 @@ The AAAI2025 accepted this paper! We will release the code in the next few days.
 |c4_sre_n|$C_4$|SRE|80.79|625012|95.96|613402|
 |c4_rre_n|$C_4$|RRE|82.48|663796|96.62|652186|
 |c6_sre_n|$C_6$|SRE|81.36|924276|96.07|912666|
-|c6_rre_n|$C_6$|RRE|83.20|982452|-|-|
+|c6_rre_n|$C_6$|RRE|83.20|982452|-|970842|
 |c8_sre_n|$C_8$|SRE|82.52|1223540|-|-|
 |c8_rre_n|$C_8$|RRE|83.63|1301108|-|-|
 
