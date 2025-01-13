@@ -179,18 +179,6 @@ class PDRREConv(torch.nn.Module):
         return self.conv(x)
 
 
-class PDRREUp(torch.nn.Module):
-    def __init__(self, c1, c2):
-        super(PDRREUp, self).__init__()
-        self.up = nn.Sequential(
-            PointwiseRREConv(c1, c2),
-            DepthwiseRREUp(c2, c2)
-        )
-
-    def forward(self, x):
-        return self.up(x)
-
-
 class GMaxPooling(nn.Module):
     def __init__(self, c1, c2):
         super(GMaxPooling, self).__init__()
@@ -270,34 +258,6 @@ class PDRREBlock(nn.Module):
             x = self.conv1(x)
             x = self.m(x)
             return self.conv2(x)
-
-
-class _BaseMaxPooling(nn.Module):
-    def __init__(self, k, s, p, g=params['g_order']):
-        super(_BaseMaxPooling, self).__init__()
-        self.g = g
-        self.m = nn.MaxPool2d(kernel_size=k, stride=s, padding=p)
-
-    def forward(self, x):
-        x = x.view(x.shape[0], -1, x.shape[-2], x.shape[-1])
-        x = self.m(x)
-        return x.view(x.shape[0], -1, self.g, x.shape[-2], x.shape[-1])
-
-
-class GSPPF(nn.Module):
-    def __init__(self, c1, c2, k=5):
-        super(GSPPF, self).__init__()
-        c_ = c1 // 2
-        self.conv1 = PointwiseRRECBA(c1, c_)
-        self.m = _BaseMaxPooling(k, 1, k // 2)
-        self.conv2 = PointwiseRRECBA(c_ * 4, c2)
-
-    def forward(self, x):
-        """Forward pass through Ghost Convolution block."""
-        y = [self.cv1(x)]
-        y.extend(self.m(y[-1]) for _ in range(3))
-        return self.cv2(torch.cat(y, 1))
-
 
 model_size = {
     'n': {'chs': [16, 32, 64, 128], 'blocks': [1, 2, 2, 1]},
