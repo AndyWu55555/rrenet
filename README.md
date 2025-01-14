@@ -31,6 +31,7 @@ warmup stage: LinearLR; main_stage: CosineAnnealingLR
 You can train the rrnet model using the following command:
 
 ```
+cd classification
 python classification/train.py -model [Model Name] -dataset [Dataset] -batch_size 128
 ```
 
