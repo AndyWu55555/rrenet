@@ -63,8 +63,8 @@ python train.py -model c4_rre_n -dataset cifar100 -batch_size 128
 You can train the model using the following command:
 
 ```
-cd ./detection/ultralytics/
-python classification/train.py -model [Model Name] -dataset [Dataset] -batch_size 128
+cd ./detection/ultralytics-main
+python train_rredet.py
 ```
 
 
