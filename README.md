@@ -28,7 +28,7 @@ warmup stage: LinearLR; main_stage: CosineAnnealingLR
 
 
 
-You can train the model using the following command:
+You can train the rrnet model using the following command:
 
 ```
 python classification/train.py -model [Model Name] -dataset [Dataset] -batch_size 128
@@ -60,7 +60,7 @@ python train.py -model c4_rre_n -dataset cifar100 -batch_size 128
 |:---:|:---:|:---:|:---:|
 |RREDet-n ($C_4$)|55.2|40.2|3.1M|
 
-You can train the model using the following command:
+You can train the rredet model using the following command:
 
 ```
 cd ./detection/ultralytics-main
