@@ -54,4 +54,9 @@ python train.py -model c4_rre_n -dataset cifar100 -batch_size 128
 |RREDet-s ($C_4$)|86.3|67.6|10.5M|
 |RREDet-m ($C_4$)|87.4|70.3|25.7M|
 
+### Experiments on the COCO2017 dataset
+
+|Model|AP50|AP50:90|#Param.|
+|:---:|:---:|:---:|:---:|
+|RREDet-n ($C_4$)|55.2|40.2|3.1M|
 
