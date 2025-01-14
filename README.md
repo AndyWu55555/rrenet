@@ -1,6 +1,7 @@
 # Relaxed Rotational Equivariance via $G$-Biases in Vision
 The AAAI2025 accepted this paper! We will release the code in the next few days.
 
+## Classification 
 ### Training settings
 batch_size=128; epochs=300; warmup_epochs=20; lr=0.1; lr_min=1e-6; momentum=0.9; weight_decay=5e-4
 augmentation=cutmix_or_mixup (torchvision.transforms.v2); optimizer=SGD; criterion=CrossEntropyLoss;
@@ -43,4 +44,14 @@ Example command:
 cd classification
 python train.py -model c4_rre_n -dataset cifar100 -batch_size 128
 ```
+
+## Object detection
+### Experiments on the PASCAL VOC07+12 dataset
+
+|Model|AP50|AP50:90|#Param.|
+|:---:|:---:|:---:|:---:|
+|RREDet-n ($C_4$)|84.1|65.2|2.9M|
+|RREDet-s ($C_4$)|86.3|67.6|10.5M|
+|RREDet-m ($C_4$)|87.4|70.3|25.7M|
+
 
